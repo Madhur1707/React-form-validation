@@ -20,12 +20,13 @@ const App = () => {
       errorMessage:
         "username should be 3-16 characters and shouldn't include any special characters",
       label: "Userame",
+      pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
     },
     {
       id: 2,
       name: "email",
-      type: "text",
+      type: "email",
       placeholder: "Email",
       errorMessage: "it should be valid email address",
       label: "Email",
@@ -47,6 +48,8 @@ const App = () => {
       errorMessage:
         "password should be 8-20 characters and include at least 1 letter, 1number , 1 special character",
       label: "Password",
+      pattern:
+        "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$",
       required: true,
     },
     {
@@ -56,6 +59,7 @@ const App = () => {
       placeholder: "Confirm Password",
       errorMessage: "password don't match",
       label: "ConfirmPassword",
+      pattern: values.password,
       required: true,
     },
   ];

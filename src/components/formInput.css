@@ -22,6 +22,9 @@ span {
   display: none;
 }
 
-input:invalid ~ span {
+input:invalid[occupied="true"] {
+  border: 1px solid red;
+}
+input:invalid[occupied="true"] ~ span {
   display: block;
 }
