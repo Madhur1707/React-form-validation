@@ -46,7 +46,7 @@ const App = () => {
       type: "password",
       placeholder: "Password",
       errorMessage:
-        "password should be 8-20 characters and include at least 1 letter, 1number , 1 special character",
+        "password should be 8-20 characters and include at least 1 Upperletter , 1number , 1 special character",
       label: "Password",
       pattern:
         "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$",
